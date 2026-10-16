@@ -10,22 +10,53 @@ body{
     background-color: #fff1ff;
 }
 
-.centro{
+.contenedor{
     margin: auto;
     width: 800px;
     max-width: 800px;
 }
 
-.cabezera{
+header{
     background-color: #c070af;
     width: 800px;
     display: flex;
     min-height: 100px;
     margin-top: 15px;
-    margin-bottom: 30px;
     padding: 20px;
     color: #fff1ff;
     border-radius: 10px 10px 0px 0px;
 }
 
-.cabezera .logo{}
+
+header h1 {
+    font-family: 'Sansita Swashed', cursive;
+    font-weight: 500px;
+    text-shadow: 5px 5px 0px 4px #a6479b ;
+    text-shadow: 5px 5px 4px #a6479b;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+header .logo{
+    height: 70px;
+    width: 70px;
+    margin-left: auto;
+}
+
+/*Altura mínima de 40 px, relleno de 5 px vertical y 10 px horizontal, texto centrado.
+• El fondo y el texto tendrán inicialmente el mismo color: #a6479b. De este modo, el mensaje permanecerá oculto.
+• Al situar el puntero sobre la banda, el fondo cambiará a rgba(166, 71, 155, 0.25) mediante una transición de 6
+segundos.
+• En dispositivos sin hover, muestra siempre el texto aplicando directamente el fondo semitransparente.*/
+
+.banda{
+    min-height: 40px;
+    padding: 5px 10px;
+    text-align: center;
+    background-color: #a6479b;
+    color: #a6479b;
+}
+
+.banda:hover{
+    background-color: rgba(166, 71, 155, 0.25);
+}
