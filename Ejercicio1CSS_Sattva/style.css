@@ -43,12 +43,6 @@ header .logo{
     margin-left: auto;
 }
 
-/*Altura mínima de 40 px, relleno de 5 px vertical y 10 px horizontal, texto centrado.
-• El fondo y el texto tendrán inicialmente el mismo color: #a6479b. De este modo, el mensaje permanecerá oculto.
-• Al situar el puntero sobre la banda, el fondo cambiará a rgba(166, 71, 155, 0.25) mediante una transición de 6
-segundos.
-• En dispositivos sin hover, muestra siempre el texto aplicando directamente el fondo semitransparente.*/
-
 .banda{
     min-height: 40px;
     padding: 5px 10px;
