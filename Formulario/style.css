@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(to bottom, #f8fafc, #e2e8f0);
+    font-size: 16px;
+}
+
+form {
+    background-color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+form>fieldset {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #dbeafe;
+    border-radius: 12px;
+    background-color: white;
+}
+
+form>fieldset>legend {
+    font-size: 1.1rem;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+form>fieldset>label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    color: #334155;
+    font-weight: 600;
+}
+
+form>fieldset>input,textarea{
+    width: 100%;
+    min-width: 44px;
+    padding: 12px;
+    border: 2px solid #cbd5e1;
+    border-radius: 10px;
+    background-color: white;
+    color: #334155;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form>fieldset>input:hover {
+    border-color: #6366f1;
+    outline: none;
+    box-shadow: 0 0 5px rgba(99, 102, 241, 0.4);
+    background-color: white;
+}
