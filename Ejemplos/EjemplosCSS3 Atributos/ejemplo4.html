@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+	<title>Propiedad para palabras muy largas</title>
+    <meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+	<style>
+	body {
+		font-family: 'Mooli', sans-serif;
+		background-color: rgba(200, 0, 0, 0.5); 
+		padding: 10px;
+		color:whitesmoke;
+	}
+	.wrap1 {
+		width:300px;
+		word-wrap: normal;
+		border-width:2px;
+		border-color:whitesmoke;
+		border-style:solid;
+	}
+	.wrap2 {
+		width:300px;
+		word-wrap: break-word;
+		border-width:2px;
+		border-color:whitesmoke;
+		border-style:solid;	
+	}
+	</style>
+</head>
+<body>
+	<div class="wrap1">
+	Este texto entra bien en la capa, pero ahora vamos a colocar una palabra demasiado larga que no cabrá, 
+	por lo que nos descuadrará el diseño: wieiisiddjasddjkjasdasdsadfdsfsdfsfsdfsdsdfsdfkaldkadadsadadadadsad. Esta capa tiene 300 píxeles de anchura y esa palabra, por tanto no cabrá y me descuadra todo.
+	</div>
+	<div class="wrap2">
+	Esta otra capa tiene el atributo word-wrap: break-word y por tanto va a recortar la siguiente palabra para que quepa bien en la caja: wieiisiddjasddjkjasdasdsadfdsfsdfsfsdfsdsdfsdfkaldkadadsadadadadsad. Ahora la capa no se ve afectada por una palabra tan larga.
+	</div>
+</body>
+</html>

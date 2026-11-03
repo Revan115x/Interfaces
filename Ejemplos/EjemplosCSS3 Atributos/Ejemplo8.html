@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">    
+		<title>Sombra de texto con CSS3</title>
+		<link href='http://fonts.googleapis.com/css?family=Hind' rel='stylesheet' type='text/css'>
+		<style>
+		body {
+			font-family: 'Hind', sans-serif;
+			font-size:20px;
+			background-color: #5ab9c1;
+		}
+		.cajasombra{
+			background-color: rgba(194, 13, 96, 0.5);
+			width: 300px;
+			padding: 10px;		
+			text-shadow: 2px 2px 0 #333;
+			margin-bottom: 30px;
+		}
+		.sombraclara{
+			width: 200px;
+			padding: 10px;
+			background-color: #000;
+			color: #fff;	
+			text-shadow: 2px 2px 2px rgba(90, 185, 193, 0.1);
+			margin-bottom: 30px;		
+		}
+		.sombraredondeada{
+			color:aliceblue;
+			background-color: rgba(194, 13, 96, 0.7);
+			color: #fff;
+			width: 400px;
+			padding: 10px;
+			text-shadow: 15px -10px 3px #000;
+			margin-bottom: 30px;		
+		}
+		</style>
+	</head>
+	<body>
+	<div class="cajasombra">
+		Esta es un texto con sombra creado con CSS 3.
+	</div>
+		<div class="sombraclara">
+		Este texto lo pongo sobre fondo negro, para hacer un elemento con sombra clara.
+		</div>  
+	<div class="sombraredondeada">	
+		Otro efeccto de sombra en el texto
+	</div>   
+	</body>
+</html>
+

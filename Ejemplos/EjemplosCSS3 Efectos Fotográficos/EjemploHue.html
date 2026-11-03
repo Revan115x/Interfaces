@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <title>Efectos fotográficos con CSS3</title>
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e8e1d5;
+            margin: 35px auto;
+            width: 86%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        #izq {
+            grid-column: 1;
+        }
+
+        #der {
+            grid-column: 2;
+        }
+
+        h3 {
+            font-family: "Courier New", Courier, monospace;
+            font-size: 22px;
+            color: #3a2d24;
+            text-shadow: 1px 1px 6px #b69577;
+            margin-bottom: 12px;
+        }
+
+        .resplandorblanco {
+            box-shadow: 0 0 20px #7b604b;
+            padding: 14px;
+            border: 2px solid #7b604b;
+            width: 80%;
+            height: 80%;
+            background-color: #f7f3ed;
+        }
+		#sinefecto {
+			height:100%;
+			width:100%;	
+		}
+
+		#efectohue {
+			height:100%;
+			width:100%;
+			filter: hue-rotate(180deg); /* Rotar la matriz 180 grados */	
+		}
+	</style>
+</head>
+<body>
+	<div id="izq">
+		<h3>IMAGEN ORIGINAL</h3>
+		<div class="resplandorblanco">
+			<img src="Room.jpg" id="sinefecto">
+		</div>
+	</div>
+	<div id="der">
+		<h3>EFECTO HUE </h3>
+		<div class="resplandorblanco">
+			<img src="Room.jpg" id="efectohue">
+		</div>
+	</div>	
+</body>
+</html>
