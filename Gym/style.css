@@ -1,0 +1,53 @@
+*{
+    box-sizing: content-box;
+    margin: auto;
+}
+
+.Encabezado{
+    background-color: #ff5f49;
+    color: white;
+    font-size: 4rem;
+}
+
+.Encabezado > h1 {
+    text-align: center;
+    letter-spacing:0,05em;
+}
+
+.menu{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid coral;
+    display: flex;
+    justify-content: space-around
+}
+
+.menu > p {
+    font-size: 20px;
+    letter-spacing: 0,25em;
+}
+
+/*Aplica un margen superior de 80 px, relleno horizontal del 20 %, tamaño de 2em y separación entre palabras de 12
+px.
+• Resalta “150 minutos” con el color coral y estilo cursiva mediante la clase resalta.*/
+
+h2 {
+    margin-top: 80px;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 2em;
+    word-spacing: 12px;
+}
+
+/*Convierte la lista ordenada en un contenedor Flexbox con ajuste de línea, centrado y separación de 30 px entre
+
+
+filas. La separación entre columnas será clamp(20px, 6vw, 80px).
+• Aplica un margen superior de 10vh, relleno horizontal del 10 % y elimina los marcadores.
+• Cada paso medirá 200 × 200 px, tendrá forma circular mediante border-radius: 50 %, fondo #f2f2f2 y contenido
+centrado en columna.
+• Genera la numeración 01, 02 y 03 con un contador CSS y el pseudoelemento ::before. El número tendrá tamaño
+2em y color coral.
+• Las imágenes ocuparán como máximo el 60 % del círculo y mantendrán su proporción.
+• Al pasar el puntero por un círculo, muestra una sombra gris con 2 px de desplazamiento horizontal y vertical, 4 px
+de desenfoque y 2 px de expansión. La transición durará 0,3 segundos.*/
