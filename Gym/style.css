@@ -22,16 +22,26 @@
     justify-content: space-around
 }
 
-.menu > p {
-    font-size: 20px;
-    letter-spacing: 0,25em;
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
 }
 
-/*Aplica un margen superior de 80 px, relleno horizontal del 20 %, tamaño de 2em y separación entre palabras de 12
-px.
-• Resalta “150 minutos” con el color coral y estilo cursiva mediante la clase resalta.*/
+.menu li {
+    text-align: center;
+}
 
-h2 {
+.menu a {
+    font-size: 20px;
+    letter-spacing: 0,25em;
+    text-decoration: none;
+
+}
+
+.frase {
     margin-top: 80px;
     padding-left: 20%;
     padding-right: 20%;
@@ -39,15 +49,71 @@ h2 {
     word-spacing: 12px;
 }
 
-/*Convierte la lista ordenada en un contenedor Flexbox con ajuste de línea, centrado y separación de 30 px entre
+.resalta {
+    color: red;
+    font-style: italic;
+}
+
+/* Pasos de trabajo */
+ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: clamp(20px, 6vw, 80px);
+
+    margin-top: 10vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    list-style: none;
+
+    counter-reset: pasos;
+}
+
+/* Cada círculo */
+ol li {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    counter-increment: pasos;
+}
+
+/* Numeración automática */
+ol li::before {
+    content: "0" counter(pasos);
+    font-size: 2em;
+    color: var(--coral);
+}
+
+/* Imágenes */
+ol li img {
+    max-width: 60%;
+    height: auto;
+}
+
+/* Efecto al pasar el ratón */
+ol li:hover {
+    box-shadow: 2px 2px 4px 2px grey;
+    transition: 0.3s;
+}
 
 
-filas. La separación entre columnas será clamp(20px, 6vw, 80px).
-• Aplica un margen superior de 10vh, relleno horizontal del 10 % y elimina los marcadores.
-• Cada paso medirá 200 × 200 px, tendrá forma circular mediante border-radius: 50 %, fondo #f2f2f2 y contenido
-centrado en columna.
-• Genera la numeración 01, 02 y 03 con un contador CSS y el pseudoelemento ::before. El número tendrá tamaño
-2em y color coral.
-• Las imágenes ocuparán como máximo el 60 % del círculo y mantendrán su proporción.
-• Al pasar el puntero por un círculo, muestra una sombra gris con 2 px de desplazamiento horizontal y vertical, 4 px
-de desenfoque y 2 px de expansión. La transición durará 0,3 segundos.*/
+/**************************************************************************/
+
+.info {
+    margin-top: 40px;
+    height: 70vh;
+    width: 100%;
+    background-image: url("imagenes/niños.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+}
+
